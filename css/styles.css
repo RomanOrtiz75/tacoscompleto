@@ -1,0 +1,684 @@
+@font-face {
+    font-family: Symply_Olive;
+    src: url(fonts/simply_olive/Simply_Olive.ttf);
+
+    font-family: Organic_Relief;
+    src: url(fonts/organic_relief/Organic_Relief.ttf);
+}
+*{
+    margin:0;
+	padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2.8em;}
+h4{ font-size: 1.6em;}
+ul{ list-style: none;}
+li{ font-size: 1.0em;}
+
+button{
+    font-size: 1.25em;
+	font-weight: bold;
+	padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(227, 154, 86);
+}
+
+button:hover{
+    background-color: rgb(224, 108, 0);
+}
+
+.menuicon{
+    margin-left: 40%;
+    margin-top: 70%;
+    height: 30px;
+}
+/*menu*/
+.barra{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    transition: .4s all;
+    z-index: 1;
+}
+
+.barra ul{
+    padding: 0px;
+    text-align: center;
+}
+
+.barra li{
+    transition: .3s all;
+}
+
+.barra a{
+    text-decoration: none;
+    list-style: none;
+    transition: .3s all;
+    font-size: 0%;
+    padding: 0%;
+}
+
+.barra h2{
+    font-family: Organic_Relief;
+    text-align: center;
+    color: white;
+    font-size: 0px;
+}
+
+.barra img{
+    padding-top: 0%;
+}
+
+.barra:hover{
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(254, 163, 43, 0.833);
+}
+
+.barra:hover h2{
+    padding: 15%;
+    font-size: 200%;
+}
+
+.barra:hover a{
+    font-size: 150%;
+    color: white;
+    display: block;
+    padding: 5%;
+}
+
+.barra:hover img{
+    height: 0;
+    position: absolute;
+
+}
+
+.barra:hover li{
+    border-top: 1px solid rgba(0, 0, 0, 0);
+    width: 100%;
+}
+
+.barra:hover a:hover{
+    font-size: 70%;
+    padding: 5% 0;
+    background-color: hsla(29, 100%, 29%, 0.973);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(226, 131, 43); }
+
+header{
+    background-color: rgb(216, 216, 216);
+    
+}
+
+header .multiop{
+    font-size: 0.7em;
+}
+header #logoimg{
+    display: none;
+}
+header .logo{
+    font-family: Organic_Relief;
+    margin: 0;
+    padding: 20px 0 0 40px;
+    font-weight: bold;
+    color: rgb(226, 131, 43);
+    font-size: 0.9em;
+}
+
+header .container{
+    display: flex;
+    height: 11vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    text-align: center;
+    padding: 0px 0 0 45px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(226, 119, 43);
+}
+
+#separacion .container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 12px;
+    background-color: rgb(255, 255, 255);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/tacos2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    font-size: 2.2em;
+}
+
+#hero button{
+    font-size: 0.75em;
+}
+
+#quienessomos .container{
+    text-align: center;
+    padding: 55px 12px;
+    height: 40vh;
+}
+#quienessomos h1{
+    font-size: 1.7em;
+}
+
+#quienessomos h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+
+}
+
+#caracteristicas .alintext{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 12px;
+    background-color: grey;
+    height: 50vh;
+}
+
+#caracteristicas h3{
+    font-size: 1.3em;
+    color: rgb(248, 149, 45) ;
+}
+
+#caracteristicas h4{
+    font-size: 0.9em;
+    color: rgb(255, 255, 255) ;
+    
+}
+
+#caracteristicas .video{
+        width:  180px; 
+        height: 100px;
+ }
+
+.final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 32vh;
+}
+
+.final .imagenmenu{
+    height: 1000px;
+}
+.final h2{
+    font-size: 9vw;
+}
+
+.final button{
+    font-size: 5vw;
+}
+/*footer*/
+.filas{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#footer ul{
+	list-style: none;
+}
+#footer{
+	background-color: rgb(30, 30, 30);
+    padding: 30px 0;
+    
+}
+.footercol{
+   width: 25%;
+   padding: 0 15px;
+   text-align: center;
+}
+.footercol h4{
+	font-size: 13px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footercol h4::before{
+	content: '';
+	position: absolute;
+	left:22%;
+	bottom: -10px;
+	background-color: #ffa723;
+	height: 2px;
+	box-sizing: border-box;
+	width: 200px;
+}
+.footercol ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footercol ul li a{
+	font-size: 10px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footercol ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footercol .social-links a{
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 6px 6px 0;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footercol .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
+
+@media (min-width: 850px){
+    h1{ font-size: 3.5em;}
+    h2{ font-size: 2.7em;}
+    h3{ font-size: 2.8em;}
+    h4{ font-size: 1.6em;}
+    ul{ list-style: none;}
+    li{ font-size: 1.0em;}
+    
+    .menuicon{
+        margin-left: 40%;
+        margin-top: 70%;
+        height: 40px;
+    }
+    /*menu*/
+    .barra{
+        font-family: Arial, Helvetica, sans-serif;
+        position: fixed;
+        transition: .4s all;
+        z-index: 1;
+    }
+    
+    .barra ul{
+        padding: 0px;
+        text-align: center;
+    }
+    
+    .barra li{
+        transition: .3s all;
+    }
+    
+    .barra a{
+        text-decoration: none;
+        list-style: none;
+        transition: .3s all;
+        font-size: 0%;
+        padding: 0%;
+    }
+    
+    .barra h2{
+        font-family: Organic_Relief;
+        text-align: center;
+        color: white;
+        font-size: 0px;
+    }
+    
+    .barra img{
+        padding-top: 0%;
+    }
+    
+    .barra:hover{
+        width: 25%;
+        height: 100%;
+        position: fixed;
+        background-color: rgba(254, 163, 43, 0.833);
+    }
+    
+    .barra:hover h2{
+        padding: 15%;
+        font-size: 200%;
+    }
+    
+    .barra:hover a{
+        font-size: 150%;
+        color: white;
+        display: block;
+        padding: 5%;
+    }
+    
+    .barra:hover img{
+        height: 0;
+        position: absolute;
+    
+    }
+    
+    .barra:hover li{
+        border-top: 1px solid rgba(0, 0, 0, 0);
+        width: 100%;
+    }
+    
+    .barra:hover a:hover{
+        font-size: 70%;
+        padding: 5% 0;
+        background-color: hsla(29, 100%, 29%, 0.973);
+    }
+    
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .multiop{
+        font-size: 0.9em;
+    }
+
+    header .container{
+        height: 15vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    header .logo{
+        font-family: Organic_Relief;
+        margin: 0;
+        padding: 25px 100px;
+        font-weight: bold;
+        color: rgb(226, 131, 43);
+        font-size: 1.6em;
+    }
+
+    header #logoimg{
+        display: flex;
+        margin: 0;
+        position: absolute;
+        width: 180px;
+        left: 700px;
+        padding: 3% 0 0 0%;
+    }
+    
+    #hero h1{
+        font-size: 5em;
+        color: white;
+    }
+
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/tacos2.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #hero button{
+        font-size: 1.75em;
+    }
+    
+
+    #quienessomos .container{
+        display: flex;
+        justify-content: space-evenly;
+        height: 90vh;
+    }
+
+    #quienessomos .texto{
+        width: 50%;
+        max-width: 600px;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #quienessomos h1{
+        font-size: 2.7em;
+    }
+    
+    #quienessomos h2{
+        font-size: 2.0em;
+        margin-top: 20px;
+    
+    }
+
+    #quienessomos .img-container{
+        background-image: url("media/tacos1.jpeg");
+        background-size: cover;
+        bottom: 100px;
+        top: 100px;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+        border-radius: 20px;
+        box-shadow:1px 1px 25px #24262b;
+    }
+
+    #caracteristicas{
+        background-size: initial;
+        background-color: gray;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 90vh;
+    }
+    
+    #caracteristicas .container{
+        display: flex;
+
+
+    }
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+    #caracteristicas .alintext {
+        height: 240px;
+    }
+    #caracteristicas h3{
+        font-size: 1.9em;
+        margin-top: 50px;
+        color: rgb(248, 149, 45) ;
+        
+    }
+    #caracteristicas h4{
+        font-size: 1.5em;
+        margin-top: 20px;
+        color: rgb(255, 255, 255) ;
+        
+    }
+
+    .final{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(30,30,30);
+        color: white;
+        height: 54vh;
+    }
+
+    .final h2{
+        font-size: 5em;
+    }
+
+    .final button{
+        font-size: 2em;
+    }
+
+    .filas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    /*footer*/
+    #footer ul{
+        list-style: none;
+    }
+    #footer{
+        background-color: rgb(30, 30, 30);
+        padding: 30px 0;
+        
+    }
+    .footercol{
+       width: 25%;
+       padding: 0 15px;
+       text-align: center;
+    }
+    .footercol h4{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footercol h4::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: #ffa723;
+        height: 2px;
+        box-sizing: border-box;
+        width: 270px;
+    }
+    .footercol ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footercol ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footercol ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+    .footercol .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+    .footercol .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    
+    
+    
+}
+
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+@media(max-width: 767px){
+    .footercol{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footercol{
+      width: 100%;
+      
+  }
+  .final .imagenmenu{
+    height: 100px;
+}
+  }
